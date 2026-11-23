@@ -1,0 +1,121 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 720px;
+    min-height: 260px;
+    margin: 20px auto;
+    padding: 43px 40px;
+    background-color: white;
+    border: 1px solid rgb(0, 17, 255);
+    border-radius: 16px;
+}
+
+/* Título */
+h2 {
+    color: rgb(184, 170, 252);
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+p {
+    color: #0400ff;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Campo de temperatura */
+input {
+    width: 110px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #8779d8;
+    border-radius: 11px;
+    font-size: 15px;
+}
+
+/* Selectores */
+select {
+    width: 140px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #8e79ec;
+    border-radius: 11px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Botón */
+button {
+    height: 45px;
+    padding: 0 20px;
+    background-color: rgb(133, 113, 219);
+    color: white;
+    border: none;
+    border-radius: 11px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Botón deshabilitado */
+button:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 22px;
+    color: #28a745;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Diseño adaptable */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .contenedor {
+        padding: 30px 20px;
+    }
+
+    .formulario {
+        gap: 10px;
+    }
+
+    input,
+    select {
+        flex: 1;
+        min-width: 100px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

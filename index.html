@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darwin Acevedo">
+    <title>Convertidor Temperatura-proyecto20</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h2>Convertidor de temperatura</h2>
+
+        <div class="formulario">
+
+            <input type="number" id="valor" placeholder="Ingresa temperatura">
+
+            <select id="origen">
+                <option value="">Unidad de origen</option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+
+
+            <select id="destino">
+                <option value="">Unidad destino</option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+
+
+            <button id="convertir" disabled>Convertir</button>
+
+        </div>
+
+        <h3 id="resultado"></h3>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
